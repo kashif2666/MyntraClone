@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-const BagSummary = ({}) => {
+const BagSummary = () => {
   const bagItemIds = useSelector((state) => state.bag);
   const items = useSelector((state) => state.items);
   const finalItems = items.filter((item) => {
